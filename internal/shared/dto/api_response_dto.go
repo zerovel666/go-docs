@@ -1,4 +1,4 @@
-package shared
+package dto
 
 type ApiResponse struct {
 	Status   string    `json:"status"`
@@ -9,5 +9,5 @@ type ApiResponse struct {
 
 type Message struct {
 	Lang    string `json:"lang"`
-	Message string `json:"message"`
+	Message string `json:"message,omitempty"`
 }
